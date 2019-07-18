@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Registro"
+    tools:showIn="@layout/activity_registro">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="659dp"
+        android:background="@drawable/registro"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Registro de Usuarios"
+            android:textColor="#D37F60"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform"
+            app:fontFamily="casual" />
+
+        <EditText
+            android:id="@+id/txtNomUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtEmailUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su e-mail"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/numCelUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su celular"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtDirUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su dirección"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/txtContrUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#E68681"
+            android:text="Registrarme" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
